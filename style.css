@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f5e9e3;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: "Fraunces-Black";
+    font-family: "Fraunces", serif;
+    src: url(fonts/Fraunces_9pt-Black.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-Regular" sans-serif;
+    font-family: "Open Sans", sans-serif;
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    font-family: "Open Sans", sans-serif;
+    src: url(fonts/OpenSans-SemiBold.ttf);
+}
+
+.main-section{  
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0rem;
+    width: 55%;
+    background: white;
+    border-radius: 2rem;
+}
+
+.container_img{
+    width: 100%;
+   
+}
+
+.img-product {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.img-product-2 {
+    display: none;
+}
+
+.container_described {
+    padding: 4rem;
+}
+
+.small-title{
+    font-size: 1.6rem;
+    font-family: 'OpenSans-Regular';
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    color: rgb(139, 139, 139);
+    margin-bottom: 2.5rem;
+}
+
+h1{
+    font-family: 'Fraunces-Black';
+    font-size: 4rem;
+    color: black;
+    line-height: .9; 
+    margin-bottom: 2.5rem;
+}
+
+.product-described{
+    font-family: 'OpenSans-Regular';
+    font-size: 2.2rem;
+    line-height: 1.4; 
+    color:rgb(139, 139, 139);
+    margin-bottom: 2.5rem;
+   
+}
+
+.container_price{
+    display: flex;
+    align-items: baseline; /* Выравниваем по базовой линии */
+    gap: 2rem; /* Промежуток между ценами */
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+  
+}
+.sale-price{
+    font-family: 'Fraunces-Black';
+    font-size: 3.2rem;
+    color: #11644d;
+}
+
+.old-price{
+    font-family: 'OpenSans-Regular';
+    font-size: 1.8rem;
+    color: rgb(105, 105, 105);
+    text-decoration: line-through; /* Перечеркивание текста */
+}
+
+a.btn-green{
+    display: inline-block;
+    width: 95%;
+    padding: 2rem;
+    background: #11644d;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1rem;
+    font-family: 'OpenSans-Regular';
+    font-size: 1.6rem;
+    color: white;
+}
+
+.fas{
+    margin-right: .4rem;
+   }
+
+.section-attribution{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1199px)  {
+    html {
+        font-size: 50%;
+    }
+
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size:  37.5%;
+    }
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size:  50%;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    
+    .img-product {
+        display: none;
+    }
+    .img-product-2 {
+        display: block;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+
+
